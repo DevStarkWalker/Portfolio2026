@@ -1,24 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const cursor = document.getElementById("cursor");
 
-  let mouseX = 0, mouseY = 0;
-  let cursorX = 0, cursorY = 0;
-  const speed = 0.1; // Adjust for how fast the cursor should follow the mouse
+  let mouseX = 0;
+  let mouseY = 0;
+  let currentX = 0;
+  let currentY = 0;
 
-  function updateCursor() {
-    cursorX += (mouseX - cursorX) * speed;
-    cursorY += (mouseY - cursorY) * speed;
+  const speed = 0.15; // slightly snappier
 
-    cursor.style.left = `${cursorX}px`;
-    cursor.style.top = `${cursorY}px`;
+  const animate = () => {
+    currentX += (mouseX - currentX) * speed;
+    currentY += (mouseY - currentY) * speed;
 
-    requestAnimationFrame(updateCursor);
-  }
+    cursor.style.transform = `translate(${currentX}px, ${currentY}px)`;
 
-  document.addEventListener("mousemove", function (e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
+    requestAnimationFrame(animate);
+  };
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
   });
 
-  updateCursor();
+  animate();
 });
