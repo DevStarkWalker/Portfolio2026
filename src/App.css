@@ -182,9 +182,15 @@ m1{
     padding: 10px; /* Maintain padding */
   }
 
-  .project .button {
-  margin-top: 15px; /* Space above the button */
+  .project-button {
   display: inline-block;
+  background-color: transparent;
+  color: #cba135;
+  padding: 10px 20px;
+  border: 2px solid #cba135;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
   }
 
 

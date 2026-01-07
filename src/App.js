@@ -183,7 +183,7 @@ const App = () => {
                   href="https://github.com/DevStarkWalker/Jarvis"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button"
+                  className=".project-button"
                 >View on GitHub
               </a>
               </div>
@@ -212,7 +212,7 @@ const App = () => {
                   href="https://github.com/DevStarkWalker/NovaehWebPage"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button"
+                  className=".project-button"
                 >View webpage
               </a>
               </div>
@@ -242,7 +242,7 @@ const App = () => {
                   href="https://github.com/Ascendium-Interactive/Aim-Trainer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button"
+                  className="project-button"
                 >View on GitHub
               </a>
                 </div>
