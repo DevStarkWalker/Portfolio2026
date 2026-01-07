@@ -184,7 +184,7 @@ const App = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button"
-                >View on GH
+                >View on GitHub
               </a>
               </div>
               <div className="project">
@@ -208,12 +208,12 @@ const App = () => {
                     <span className="tag">React</span>
                     <span className="tag">Web Dev</span>
                   </div>
-                                  <a
+                <a
                   href="https://github.com/DevStarkWalker/NovaehWebPage"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button"
-                >View Page
+                >View webpage
               </a>
               </div>
               <div className="project">
@@ -226,6 +226,25 @@ const App = () => {
                     <span className="tag">C#</span>
                     <span className="tag">Game Dev</span>
                   </div>
+                </div>
+              </div>
+              <div className="project">
+                <div className="project-title">"Aim Trainer"</div>
+                  <div className="project-description">
+                    An interactive aim trainer for first person Shooter games developed with a few fellow college alumni. This was a sample project
+                    to test our capabilities on producing a functional delivarable with Unity.
+                  <div className="project-tags">
+                    <span className="tag">Unity</span>
+                    <span className="tag">C#</span>
+                    <span className="tag">Game Dev</span>
+                  </div>
+                <a
+                  href="https://github.com/Ascendium-Interactive/Aim-Trainer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >View on GitHub
+              </a>
                 </div>
               </div>
             </div>
