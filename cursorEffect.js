@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentX = 0;
   let currentY = 0;
 
-  const speed = 0.15; // slightly snappier
+  const speed = 0.1; // slightly snappier
 
   const animate = () => {
     currentX += (mouseX - currentX) * speed;
