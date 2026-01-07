@@ -183,7 +183,7 @@ const App = () => {
                   href="https://github.com/DevStarkWalker/Jarvis"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=".project-button"
+                  className="button"
                 >View on GitHub
               </a>
               </div>
@@ -201,7 +201,7 @@ const App = () => {
               <div className="project">
                 <div className="project-title">Company Website</div>
                   <div className="project-description">
-                    This website was designed and developed by me, for a comapny to to showcase their work and offer services.
+                    A website designed and developed by me, for a company to to showcase their work and offer their services.
                   </div>
                   <div className="project-tags">
                     <span className="tag">JavaScript</span>
@@ -209,10 +209,10 @@ const App = () => {
                     <span className="tag">Web Dev</span>
                   </div>
                 <a
-                  href="https://github.com/DevStarkWalker/NovaehWebPage"
+                  href="https://devstarkwalker.github.io/NovaehWebPage/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=".project-button"
+                  className="button"
                 >View webpage
               </a>
               </div>
@@ -242,7 +242,7 @@ const App = () => {
                   href="https://github.com/Ascendium-Interactive/Aim-Trainer"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="project-button"
+                  className="button"
                 >View on GitHub
               </a>
                 </div>
