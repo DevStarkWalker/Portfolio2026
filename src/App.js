@@ -194,14 +194,6 @@ const App = () => {
                     <span className="tag">Web Dev</span>
                   </div>
                 </div>
-                <a
-                  href="https://github.com/DevStarkWalker/PortfolioWebsite"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  View on GitHub
-                </a>
               </div>
 
               <div className="project">
@@ -235,14 +227,6 @@ const App = () => {
                     <span className="tag">Game Dev</span>
                   </div>
                 </div>
-                <a
-                  href="https://github.com/DevStarkWalker/MoonGame"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  View on GitHub
-                </a>
               </div>
 
               <div className="project">
