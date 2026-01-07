@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
 import './App.css'; 
 
-
-
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
 
@@ -36,10 +34,9 @@ const App = () => {
     updateCursor();
 
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove); // Clean up listener on unmount
+      document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
-
 
   useEffect(() => {
     const sections = document.querySelectorAll('.content-section');
@@ -49,7 +46,7 @@ const App = () => {
           setActiveSection(entry.target.id);
         }
       });
-    }, { threshold: 0.5 }); // Adjust threshold as needed
+    }, { threshold: 0.5 });
 
     sections.forEach(section => {
       observer.observe(section);
@@ -72,8 +69,8 @@ const App = () => {
           </div>
           <nav className="fixed-nav-links">
             <button
-            className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}
-            onClick={() => scrollToSection('about')}
+              className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}
+              onClick={() => scrollToSection('about')}
             >
               About Me
             </button>
@@ -102,16 +99,14 @@ const App = () => {
       </div>
 
       <div className="right-section">
-        {/* Fixed Navigation Links */}
-
         <div className="content-container">
           <section id="about" className="content-section">
-
-            <p>My passion for video games began at a young age, exploring early Nintendo games. This early fascination with gaming led me to discover more as I began to start modifying my Minecraft games, which eventually led me to delve deeper into the world of software development. After high school, I decided to turn my hobby into a career by studying how software works in a more structured way. I earned my Associate's degree in Computer Science from Tidewater Community College, which laid a solid foundation in programming principles. My journey continued at Old Dominion University, where I completed a Bachelor's degree in Game Studies and Design. This educational path helped me refine my skills and expand my knowledge in game development and programming. Today, I am a versatile programmer with experience across various languages and development environments.</p>
+            <p>
+              My passion for video games began at a young age, exploring early Nintendo games. This early fascination with gaming led me to discover more as I began to start modifying my Minecraft games, which eventually led me to delve deeper into the world of software development. After high school, I decided to turn my hobby into a career by studying how software works in a more structured way. I earned my Associate's degree in Computer Science from Tidewater Community College, which laid a solid foundation in programming principles. My journey continued at Old Dominion University, where I completed a Bachelor's degree in Game Studies and Design. This educational path helped me refine my skills and expand my knowledge in game development and programming. Today, I am a versatile programmer with experience across various languages and development environments.
+            </p>
           </section>
 
           <section id="experience" className="content-section">
-
             <div className="job">
               <div className="job-dates">2024 - Present</div>
               <div className="job-title"> Senior Unity Software Developer </div>
@@ -128,7 +123,7 @@ const App = () => {
               <div className="job-dates">2021 - 2023</div>
               <div className="job-title">Undergrad & Graduate Research Assistant</div>
               <p className="job-description">
-              Developed a high-quality, educationl, virtual reality app for a local school, helping teach students about the different careers in the maritime and ship building industry. Worked with a a small cross functional team of 3D artists and animators to acheive deadlines while tackling the systems and tools, leading development on the back end.
+                Developed a high-quality, educational, virtual reality app for a local school, helping teach students about different careers in the maritime and shipbuilding industry. Worked with a small cross-functional team of 3D artists and animators to achieve deadlines while tackling systems and tools, leading development on the back end.
               </p>
               <div className="job-tags">
                 <span className="tag">C#</span>
@@ -142,7 +137,7 @@ const App = () => {
               <div className="job-dates">2021 - 2023</div>
               <div className="job-title">Student at Old Dominion University</div>
               <p className="job-description">
-              I specialized in game design and development, focusing on game mechanics, interactive media, and immersive technology, while mastering tools and techniques for creating engaging digital experiences...
+                I specialized in game design and development, focusing on game mechanics, interactive media, and immersive technology, while mastering tools and techniques for creating engaging digital experiences.
               </p>
               <div className="job-tags">
                 <span className="tag">C++</span>
@@ -155,10 +150,10 @@ const App = () => {
               <div className="job-dates">2020 - 2021</div>
               <div className="job-title">Student at Tidewater Community College</div>
               <p className="job-description">
-              I developed a strong foundation in programming, algorithms, and software development, gaining essential skills in problem-solving and computational thinking.
+                I developed a strong foundation in programming, algorithms, and software development, gaining essential skills in problem-solving and computational thinking.
               </p>
               <div className="job-tags">
-              <span className="tag">C++</span>
+                <span className="tag">C++</span>
                 <span className="tag">C#</span>
                 <span className="tag">Java</span>
                 <span className="tag">GitHub</span>
@@ -170,9 +165,9 @@ const App = () => {
             <div className="project-list">
               <div className="project">
                 <div className="project-title">Jarvis Jr. (Voice Assistant)</div>
-                  <div className="project-description">
-                    A personal voice assistant and task tracking app I have began to develop with the goal of creating a true Jarvis like from the comics/movies.
-                    This is my favorite creation and has now began helping me keep track of development goals as well as my daily life tasks, while "Gamifying" it.
+                <div className="project-description">
+                  A personal voice assistant and task tracking app I have began to develop with the goal of creating a true Jarvis like from the comics/movies.
+                  This is my favorite creation and has now began helping me keep track of development goals as well as my daily life tasks, while "Gamifying" it.
                   <div className="project-tags">
                     <span className="tag">Python</span>
                     <span className="tag">OpenAI</span>
@@ -184,69 +179,92 @@ const App = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button"
-                >View on GitHub
-              </a>
+                >
+                  View on GitHub
+                </a>
               </div>
+
               <div className="project">
                 <div className="project-title">Portfolio Website</div>
-                  <div className="project-description">
-                    This website was designed and developed by me, for me, to showcase my skills, projects and career history.
-                  </div>
+                <div className="project-description">
+                  This website was designed and developed by me, for me, to showcase my skills, projects and career history.
                   <div className="project-tags">
                     <span className="tag">JavaScript</span>
                     <span className="tag">React</span>
                     <span className="tag">Web Dev</span>
                   </div>
+                </div>
+                <a
+                  href="https://github.com/DevStarkWalker/PortfolioWebsite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >
+                  View on GitHub
+                </a>
               </div>
+
               <div className="project">
                 <div className="project-title">Company Website</div>
-                  <div className="project-description">
-                    A website designed and developed by me, for a company to to showcase their work and offer their services.
-                  </div>
+                <div className="project-description">
+                  A website designed and developed by me, for a company to showcase their work and services.
                   <div className="project-tags">
                     <span className="tag">JavaScript</span>
                     <span className="tag">React</span>
                     <span className="tag">Web Dev</span>
                   </div>
+                </div>
                 <a
                   href="https://devstarkwalker.github.io/NovaehWebPage/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button"
-                >View webpage
-              </a>
+                >
+                  View webpage
+                </a>
               </div>
+
               <div className="project">
                 <div className="project-title">"Moon Game"</div>
-                  <div className="project-description">
-                    A thriller type first person horror game I am developing witha few college alumni. 
-                    This project is hoping to include procedural map generation as well as in depth UI design to incapulated the horror feel.
+                <div className="project-description">
+                  A thriller type first person horror game I am developing with a few college alumni.
+                  This project is hoping to include procedural map generation as well as in depth UI design to encapsulate the horror feel.
                   <div className="project-tags">
                     <span className="tag">Unity</span>
                     <span className="tag">C#</span>
                     <span className="tag">Game Dev</span>
                   </div>
                 </div>
+                <a
+                  href="https://github.com/DevStarkWalker/MoonGame"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >
+                  View on GitHub
+                </a>
               </div>
+
               <div className="project">
                 <div className="project-title">"Aim Trainer"</div>
-                  <div className="project-description">
-                    An interactive aim trainer for first person Shooter games developed with a few fellow college alumni. This was a sample project
-                    to test our capabilities on producing a functional delivarable with Unity.
+                <div className="project-description">
+                  An interactive aim trainer for first person shooter games developed with a few fellow college alumni. This was a sample project to test our capabilities on producing a functional deliverable with Unity.
                   <div className="project-tags">
                     <span className="tag">Unity</span>
                     <span className="tag">C#</span>
                     <span className="tag">Game Dev</span>
                   </div>
+                </div>
                 <a
                   href="https://github.com/Ascendium-Interactive/Aim-Trainer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button"
-                >View on GitHub
-              </a>
-                </div>
+                >
+                  View on GitHub
+                </a>
               </div>
+
             </div>
           </section>
         </div>
