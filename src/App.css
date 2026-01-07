@@ -182,6 +182,12 @@ m1{
     padding: 10px; /* Maintain padding */
   }
 
+  .project .button {
+  margin-top: 15px; /* Space above the button */
+  display: inline-block;
+  }
+
+
   /* Adjust project grid for mobile */
   .project-list {
     display: block; /* Stack projects vertically */

@@ -179,6 +179,13 @@ const App = () => {
                     <span className="tag">React</span>
                   </div>
                 </div>
+                <a
+                  href="https://github.com/DevStarkWalker/Jarvis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >View on GH
+              </a>
               </div>
               <div className="project">
                 <div className="project-title">Portfolio Website</div>
@@ -190,6 +197,24 @@ const App = () => {
                     <span className="tag">React</span>
                     <span className="tag">Web Dev</span>
                   </div>
+              </div>
+              <div className="project">
+                <div className="project-title">Company Website</div>
+                  <div className="project-description">
+                    This website was designed and developed by me, for a comapny to to showcase their work and offer services.
+                  </div>
+                  <div className="project-tags">
+                    <span className="tag">JavaScript</span>
+                    <span className="tag">React</span>
+                    <span className="tag">Web Dev</span>
+                  </div>
+                                  <a
+                  href="https://github.com/DevStarkWalker/NovaehWebPage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >View Page
+              </a>
               </div>
               <div className="project">
                 <div className="project-title">"Moon Game"</div>
