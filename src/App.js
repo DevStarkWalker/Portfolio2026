@@ -133,6 +133,16 @@ const [coastalIndex, setCoastalIndex] = useState(0);
               system design, and problem solving, while my industry project work has expanded my skill set across modern development environments.
               I enjoy learning new technologies, building scalable solutions, and contributing to teams that value innovation and technical excellence.
             </p>
+
+            <a
+              href="https://drive.google.com/drive/folders/1jvMgyD1SNLRYvplfDLNJrHOwFjRQg-R_?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button"
+            >
+              View Resume & Recommendation
+            </a>
+
           </section>
 
           <section id="experience" className="content-section">
