@@ -102,7 +102,10 @@ const App = () => {
         <div className="content-container">
           <section id="about" className="content-section">
             <p>
-              My passion for video games began at a young age, exploring early Nintendo games. This early fascination with gaming led me to discover more as I began to start modifying my Minecraft games, which eventually led me to delve deeper into the world of software development. After high school, I decided to turn my hobby into a career by studying how software works in a more structured way. I earned my Associate's degree in Computer Science from Tidewater Community College, which laid a solid foundation in programming principles. My journey continued at Old Dominion University, where I completed a Bachelor's degree in Game Studies and Design. This educational path helped me refine my skills and expand my knowledge in game development and programming. Today, I am a versatile programmer with experience across various languages and development environments.
+              I am a software engineer with experience in simulation, full-stack development, and interactive systems.
+              My academic background in computer science and game studies provided a strong foundation in programming,
+              system design, and problem solving, while my industry project work has expanded my skill set across modern development environments.
+              I enjoy learning new technologies, building scalable solutions, and contributing to teams that value innovation and technical excellence.
             </p>
           </section>
 
@@ -137,7 +140,11 @@ const App = () => {
               <div className="job-dates">2021 - 2023</div>
               <div className="job-title">Student at Old Dominion University</div>
               <p className="job-description">
-                I specialized in game design and development, focusing on game mechanics, interactive media, and immersive technology, while mastering tools and techniques for creating engaging digital experiences.
+                I specialized in game design and development with a focus on game mechanics, interactive media, and immersive technology.
+                 Throughout my studies, I gained hands-on experience with real-time engines, prototyping workflows,
+                  and production tools used to develop engaging digital experiences. This specialization allowed me to explore
+                   user experience design, simulation concepts, and the technical implementation of interactive systems,
+                    reinforcing my interest in building software that blends usability, performance, and innovation.
               </p>
               <div className="job-tags">
                 <span className="tag">C++</span>
@@ -150,7 +157,11 @@ const App = () => {
               <div className="job-dates">2020 - 2021</div>
               <div className="job-title">Student at Tidewater Community College</div>
               <p className="job-description">
-                I developed a strong foundation in programming, algorithms, and software development, gaining essential skills in problem-solving and computational thinking.
+                I developed a solid foundation in programming, algorithms, and software engineering principles,
+                 gaining essential skills in problem solving and computational thinking.
+                  My coursework and project work emphasized system design, data structures, performance optimization,
+                   and collaborative development practices, preparing me to work effectively within modern software workflows.
+                    This foundation has continued to support my professional growth across multiple languages, frameworks, and development environments.
               </p>
               <div className="job-tags">
                 <span className="tag">C++</span>
@@ -166,13 +177,20 @@ const App = () => {
               <div className="project">
                 <div className="project-title">Jarvis Jr. (Voice Assistant)</div>
                 <div className="project-description">
-                  A personal voice assistant and task tracking app I have began to develop with the goal of creating a true Jarvis like from the comics/movies.
-                  This is my favorite creation and has now began helping me keep track of development goals as well as my daily life tasks, while "Gamifying" it.
+                  I developed a personal voice assistant and task-tracking application inspired by the idea of creating a true
+                   “Jarvis”-style assistant from the comics and films. Built with a Python backend and a React user interface,
+                    the system integrates OpenAI API calls for natural language understanding, task creation, scheduling, and contextual responses.
+                     The assistant currently helps manage development goals and daily life tasks while “gamifying” productivity through rewards,
+                      progress tracking, and dynamic feedback. This remains my favorite project, and its capabilities continue to expand
+                       as I iterate and explore new automation workflows and conversational behaviors.
                   <div className="project-tags">
                     <span className="tag">Python</span>
                     <span className="tag">OpenAI</span>
                     <span className="tag">React</span>
                   </div>
+                    <div className="project-image">
+                      <img src= "./public/images/pokemon.png" alt="Pokemon Card Collector App Preview" />
+                    </div>
                 </div>
                 <a
                   href="https://github.com/DevStarkWalker/Jarvis"
@@ -185,9 +203,32 @@ const App = () => {
               </div>
 
               <div className="project">
+                <div className="project-title">Pokemon Card Collector App</div>
+                <div className="project-description">
+                  Built a data ingestion and storage pipeline to extract and normalize Pokémon trading card data from the PokemonTCG API.
+                   Designed a relational PostgreSQL schema using Prisma to map card metadata and set relationships, and implemented a Node.js
+                    scraping workflow to populate and maintain the database. Used PgAdmin to validate data, run queries, and verify schema integrity.
+                     Initial front-end was slated for React, but development concluded after database and data services were completed,
+                      demonstrating proficiency in API integration, ORM modeling, and SQL database design.
+                  <div className="project-tags">
+                    <span className="tag">JavaScript</span>
+                    <span className="tag">Node.js</span>
+                    <span className="tag">Prisma</span>
+                    <span className="tag">PostgreSQL</span>
+                    <span className="tag">PgAdmin</span>
+                    <span className="tag">PokemonTCG API</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="project">
                 <div className="project-title">Portfolio Website</div>
                 <div className="project-description">
-                  This website was designed and developed by me, for me, to showcase my skills, projects and career history.
+                  This personal portfolio website was designed and developed in JavaScript and React to present my skills,
+                   professional experience, and project work. The site serves as both a technical showcase and a centralized
+                    profile for recruiters, collaborators, and prospective clients, with a focus on clean UI, responsive design,
+                     and maintainable front-end architecture.
+
                   <div className="project-tags">
                     <span className="tag">JavaScript</span>
                     <span className="tag">React</span>
@@ -199,7 +240,11 @@ const App = () => {
               <div className="project">
                 <div className="project-title">Company Website</div>
                 <div className="project-description">
-                  A website designed and developed by me, for a company to showcase their work and services.
+                  A company website designed and developed using JavaScript and React to showcase the organization’s services,
+                   capabilities, and completed work. The project emphasized visual clarity, navigation structure,
+                    and responsive design to effectively communicate offerings to prospective customers and partners while
+                     maintaining a scalable front-end codebase.
+
                   <div className="project-tags">
                     <span className="tag">JavaScript</span>
                     <span className="tag">React</span>
@@ -219,8 +264,12 @@ const App = () => {
               <div className="project">
                 <div className="project-title">"Moon Game"</div>
                 <div className="project-description">
-                  A thriller type first person horror game I am developing with a few college alumni.
-                  This project is hoping to include procedural map generation as well as in depth UI design to encapsulate the horror feel.
+                  A first-person thriller/horror game developed collaboratively in Unity with C# by a small group of college alumni.
+                   The project explores atmospheric design, immersive UI/UX practices, and tension-building mechanics while aiming
+                    to implement procedural map generation and environmental variability. The focus is to create a compelling horror
+                     experience through dynamic level layouts, visual feedback, sound design, and an interface that reinforces mood
+                      and player uncertainty.
+
                   <div className="project-tags">
                     <span className="tag">Unity</span>
                     <span className="tag">C#</span>
@@ -232,7 +281,11 @@ const App = () => {
               <div className="project">
                 <div className="project-title">"Aim Trainer"</div>
                 <div className="project-description">
-                  An interactive aim trainer for first person shooter games developed with a few fellow college alumni. This was a sample project to test our capabilities on producing a functional deliverable with Unity.
+                  An interactive 3D aim trainer for first-person shooter players, developed in Unity with C# alongside fellow alumni.
+                   This prototype served as a test of team workflow and technical scope, emphasizing target spawning logic, input handling,
+                    shot accuracy tracking, and responsive feedback loops. The goal was to deliver a functional and optimized training experience
+                     while validating our ability to design, implement, and iterate on a complete Unity project as a team.
+
                   <div className="project-tags">
                     <span className="tag">Unity</span>
                     <span className="tag">C#</span>
