@@ -8,6 +8,8 @@ import bulky1 from "./bulkypic.png";
 import bulky2 from "./IncredibleBulk-video.mp4";
 import Coastal1 from "./coastalcoders.png";
 import Coastal2 from "./coastalcodersboat.png";
+import AimTrainer from "./AimTrainer.mp4";
+import AimTrainer2 from "./AimTrainer2.mp4";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -45,15 +47,21 @@ const App = () => {
     };
   }, []);
 
-  // Gallery state for Jarvis
+  // Gallery state for Bulky
   const BulkyImages = [
     { type: "image", src: bulky1},
     { type: "video", src: bulky2}]; // add more images as needed
   const [BulkyIndex, setBulkyIndex] = useState(0);
 
-  // Gallery state for Jarvis
+  // Gallery state for Coastal
 const coastalImages = [Coastal1, Coastal2]; // add more images as needed
 const [coastalIndex, setCoastalIndex] = useState(0);
+
+  // Gallery state for Aim Trainer
+  const AimVids = [
+    { type: "video", src: AimTrainer},
+    { type: "video", src: AimTrainer2}]; // add more images as needed
+  const [AimIndex, setAimIndex] = useState(0);
 
 
   useEffect(() => {
@@ -321,8 +329,7 @@ const [coastalIndex, setCoastalIndex] = useState(0);
                 </div>
               </div>
 
-
-                            <div className="project">
+                <div className="project">
                 <div className="project-title">Coastal Coders</div>
                 <div className="project-description">
                   Coastal Coders is an educational game developed in collaboration with Newport News HII Shipyard and local public schools to introduce
@@ -394,8 +401,29 @@ const [coastalIndex, setCoastalIndex] = useState(0);
                 >
                   View on GitHub
                 </a>
+                <div className="project-gallery">
+                  <button className="gallery-btn left" onClick={() => setAimIndex(prev => (prev - 1 + AimVids.length) % AimVids.length)}><FaChevronLeft size={20}/></button>
+  
+                  {AimVids[AimIndex].type === "image" ? (
+                    <img
+                      src={AimVids[AimIndex].src}
+                      alt={`Jarvis Media ${AimIndex + 1}`}
+                      className="gallery-image"
+                    />
+                  ) : (
+                    <video
+                      src={AimVids[AimIndex].src}
+                      className="gallery-image"
+                      controls
+                      autoPlay={false}
+                      loop
+                    />
+                  )}
+                  
+                  <button className="gallery-btn right" onClick={() => setAimIndex(prev => (prev + 1) % AimVids.length)}><FaChevronRight size={20} /></button>
+                </div>  
               </div>
-
+                    
             </div>
           </section>
         </div>
