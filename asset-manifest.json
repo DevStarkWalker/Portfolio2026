@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio2026/static/css/main.e68d79c0.css",
-    "main.js": "/Portfolio2026/static/js/main.966d5564.js",
+    "main.js": "/Portfolio2026/static/js/main.b6d20aaa.js",
     "static/js/453.acca0757.chunk.js": "/Portfolio2026/static/js/453.acca0757.chunk.js",
     "static/media/IncredibleBulk-video.mp4": "/Portfolio2026/static/media/IncredibleBulk-video.0a315ef1e4a3e5006ec7.mp4",
+    "static/media/AimTrainer.mp4": "/Portfolio2026/static/media/AimTrainer.d85368655e5bd3e64cdd.mp4",
+    "static/media/AimTrainer2.mp4": "/Portfolio2026/static/media/AimTrainer2.dc31708b217a3a1ef878.mp4",
     "static/media/coastalcodersboat.png": "/Portfolio2026/static/media/coastalcodersboat.0f5b0c78c39c4aea6191.png",
     "static/media/bulkypic.png": "/Portfolio2026/static/media/bulkypic.81f06313f65a039c65ca.png",
     "static/media/coastalcoders.png": "/Portfolio2026/static/media/coastalcoders.84e5fcf75800c7253023.png",
@@ -11,11 +13,11 @@
     "static/media/Jarvis.png": "/Portfolio2026/static/media/Jarvis.17c932b23f652cd0a156.png",
     "index.html": "/Portfolio2026/index.html",
     "main.e68d79c0.css.map": "/Portfolio2026/static/css/main.e68d79c0.css.map",
-    "main.966d5564.js.map": "/Portfolio2026/static/js/main.966d5564.js.map",
+    "main.b6d20aaa.js.map": "/Portfolio2026/static/js/main.b6d20aaa.js.map",
     "453.acca0757.chunk.js.map": "/Portfolio2026/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e68d79c0.css",
-    "static/js/main.966d5564.js"
+    "static/js/main.b6d20aaa.js"
   ]
 }
