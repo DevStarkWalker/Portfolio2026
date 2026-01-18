@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
 import './App.css'; 
+import pokemon from "./pokemon.png";
+
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -188,9 +190,6 @@ const App = () => {
                     <span className="tag">OpenAI</span>
                     <span className="tag">React</span>
                   </div>
-                    <div className="project-image">
-                      <img src= "./public/images/pokemon.png" alt="Pokemon Card Collector App Preview" />
-                    </div>
                 </div>
                 <a
                   href="https://github.com/DevStarkWalker/Jarvis"
@@ -219,6 +218,9 @@ const App = () => {
                     <span className="tag">PokemonTCG API</span>
                   </div>
                 </div>
+                  <div className="project-image">
+                    <img src={pokemon} alt="Pokemon Card Collector App Preview" />
+                  </div>
               </div>
 
               <div className="project">

@@ -477,6 +477,22 @@ m1{
   line-height: 1.6em;
 }
 
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
 /* Job tags section */
 .job-tags {
   margin-top:  10px;
