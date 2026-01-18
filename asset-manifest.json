@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio2026/static/css/main.e68d79c0.css",
-    "main.js": "/Portfolio2026/static/js/main.b6d20aaa.js",
+    "main.js": "/Portfolio2026/static/js/main.b60d56a4.js",
     "static/js/453.acca0757.chunk.js": "/Portfolio2026/static/js/453.acca0757.chunk.js",
     "static/media/IncredibleBulk-video.mp4": "/Portfolio2026/static/media/IncredibleBulk-video.0a315ef1e4a3e5006ec7.mp4",
     "static/media/AimTrainer.mp4": "/Portfolio2026/static/media/AimTrainer.d85368655e5bd3e64cdd.mp4",
@@ -13,11 +13,11 @@
     "static/media/Jarvis.png": "/Portfolio2026/static/media/Jarvis.17c932b23f652cd0a156.png",
     "index.html": "/Portfolio2026/index.html",
     "main.e68d79c0.css.map": "/Portfolio2026/static/css/main.e68d79c0.css.map",
-    "main.b6d20aaa.js.map": "/Portfolio2026/static/js/main.b6d20aaa.js.map",
+    "main.b60d56a4.js.map": "/Portfolio2026/static/js/main.b60d56a4.js.map",
     "453.acca0757.chunk.js.map": "/Portfolio2026/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e68d79c0.css",
-    "static/js/main.b6d20aaa.js"
+    "static/js/main.b60d56a4.js"
   ]
 }
