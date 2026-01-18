@@ -492,6 +492,36 @@ m1{
   object-fit: cover;
 }
 
+.project-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 12px; /* space between buttons and image */
+}
+
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.gallery-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.gallery-btn:hover {
+  transform: scale(1.2);
+  color: #00ffff; /* accent color, adjust as you like */
+}
+
+
 
 /* Job tags section */
 .job-tags {

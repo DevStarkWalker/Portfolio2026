@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
 import './App.css'; 
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import pokemon from "./pokemon.png";
-
+import jarvis from "./Jarvis.png";
+import bulky1 from "./bulkypic.png";
+import bulky2 from "./IncredibleBulk-video.mp4";
+import Coastal1 from "./coastalcoders.png";
+import Coastal2 from "./coastalcodersboat.png";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -39,6 +44,17 @@ const App = () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
+
+  // Gallery state for Jarvis
+  const BulkyImages = [
+    { type: "image", src: bulky1},
+    { type: "video", src: bulky2}]; // add more images as needed
+  const [BulkyIndex, setBulkyIndex] = useState(0);
+
+  // Gallery state for Jarvis
+const coastalImages = [Coastal1, Coastal2]; // add more images as needed
+const [coastalIndex, setCoastalIndex] = useState(0);
+
 
   useEffect(() => {
     const sections = document.querySelectorAll('.content-section');
@@ -191,6 +207,9 @@ const App = () => {
                     <span className="tag">React</span>
                   </div>
                 </div>
+                <div className="project-image">
+                  <img src={jarvis} alt="Pokemon Card Collector App Preview" />
+                </div>
                 <a
                   href="https://github.com/DevStarkWalker/Jarvis"
                   target="_blank"
@@ -262,6 +281,79 @@ const App = () => {
                   View webpage
                 </a>
               </div>
+
+                <div className="project">
+                <div className="project-title">Incredible Bulk</div>
+                <div className="project-description">
+                  Incredible Bulk is an immersive Virtual Reality experience designed to teach middle school students about maritime
+                   trades through interactive, hands-on learning. As the lead VR developer, I architected and implemented core systems,
+                    including a 3D pipe-fitting puzzle and interactive simulations, while ensuring performance and usability for VR platforms.
+                     The project evolved into a full, playable experience with three distinct career paths and a final challenge scenario,
+                      providing varied educational content. The first version was showcased at the 2023 World of Works Expo at Tidewater Community College,
+                       receiving strong positive feedback for its educational impact and engagement.
+                  <div className="project-tags">
+                    <span className="tag">C#</span>
+                    <span className="tag">Unity</span>
+                    <span className="tag">Virtual Reality</span>
+                    <span className="tag">Simulation</span>
+                  </div>
+                </div>
+                <div className="project-gallery">
+                  <button className="gallery-btn left" onClick={() => setBulkyIndex(prev => (prev - 1 + BulkyImages.length) % BulkyImages.length)}><FaChevronLeft size={20}/></button>
+  
+                  {BulkyImages[BulkyIndex].type === "image" ? (
+                    <img
+                      src={BulkyImages[BulkyIndex].src}
+                      alt={`Jarvis Media ${BulkyIndex + 1}`}
+                      className="gallery-image"
+                    />
+                  ) : (
+                    <video
+                      src={BulkyImages[BulkyIndex].src}
+                      className="gallery-image"
+                      controls
+                      autoPlay={false}
+                      loop
+                    />
+                  )}
+                  
+                  <button className="gallery-btn right" onClick={() => setBulkyIndex(prev => (prev + 1) % BulkyImages.length)}><FaChevronRight size={20} /></button>
+                </div>
+              </div>
+
+
+                            <div className="project">
+                <div className="project-title">Coastal Coders</div>
+                <div className="project-description">
+                  Coastal Coders is an educational game developed in collaboration with Newport News HII Shipyard and local public schools to introduce
+                   students to the maritime industry. Over the course of three years, I contributed as part of the development team, designing and implementing
+                    multiple minigames that reinforced STEM learning objectives while providing engaging gameplay. This work included prototyping interactive
+                     systems, integrating user feedback, and ensuring that the minigames aligned with both educational standards and overall project goals.
+                      The game was planned for deployment across Newport News public schools as part of a STEM curriculum initiative.
+                  <div className="project-tags">
+                    <span className="tag">C#</span>
+                    <span className="tag">Unity</span>
+                    <span className="tag">Simulation</span>
+                  </div>
+                </div>
+                  <div className="project-gallery">
+                    <button className="gallery-btn left" onClick={() => setCoastalIndex(prev => (prev - 1 + coastalImages.length) % coastalImages.length)}>
+                      <FaChevronLeft size={20} />
+                    </button>
+                    
+                    <img
+                      src={coastalImages[coastalIndex]}
+                      alt={`Jarvis Project ${coastalIndex + 1}`}
+                      className="gallery-image"
+                    />
+                    
+                    <button className="gallery-btn right" onClick={() => setCoastalIndex(prev => (prev + 1) % coastalImages.length)}>
+                      <FaChevronRight size={20} />
+                    </button>
+                  </div>
+              </div>
+
+
 
               <div className="project">
                 <div className="project-title">"Moon Game"</div>
